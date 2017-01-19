@@ -1,0 +1,23 @@
+{
+  "name": "stylelint-config-wandi",
+  "version": "1.0.0",
+  "description": "Wandi StyleLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WandiParis/stylelint-config-wandi.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelintconfig"
+  ],
+  "author": "Cyrille Perois <cyrille.perois@wandi.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WandiParis/stylelint-config-wandi/issues"
+  },
+  "homepage": "https://github.com/WandiParis/stylelint-config-wandi#readme"
+}
