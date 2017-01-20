@@ -73,7 +73,6 @@ module.exports = {
         "declaration-block-no-redundant-longhand-properties": true,
         "declaration-block-no-shorthand-property-overrides": true,
         "declaration-block-semicolon-newline-after": "always",
-        "declaration-block-semicolon-space-after": "never",
         "declaration-block-semicolon-space-before": "never",
         "declaration-block-single-line-max-declarations": 1,
         "declaration-block-trailing-semicolon": "always",
