@@ -1,8 +1,8 @@
 module.exports = {
     rules: {
         // Color (http://stylelint.io/user-guide/rules/#color)
-        "color-hex-case": "lower",
-        "color-hex-length": "short",
+        "color-hex-case": ["lower", { severity: "warning" }],
+        "color-hex-length": ["short", { severity: "warning" }],
         "color-no-invalid-hex": true,
 
         // Font family (http://stylelint.io/user-guide/rules/#font-family)
@@ -24,16 +24,16 @@ module.exports = {
         "function-whitespace-after": "always",
 
         // Number (http://stylelint.io/user-guide/rules/#number)
-        "number-leading-zero": "always",
+        "number-leading-zero": ["always", { severity: "warning" }],
         "number-max-precision": 6,
-        "number-no-trailing-zeros": true,
+        "number-no-trailing-zeros": [true, { severity: "warning" }],
 
         // String (http://stylelint.io/user-guide/rules/#string)
         "string-no-newline": true,
-        "string-quotes": "double",
+        "string-quotes": ["double", { severity: "warning" }],
 
         // Length (http://stylelint.io/user-guide/rules/#length)
-        "length-zero-no-unit": true,
+        "length-zero-no-unit": [true, { severity: "warning" }],
 
         // Time (http://stylelint.io/user-guide/rules/#time)
         "time-no-imperceptible": true,
@@ -54,7 +54,7 @@ module.exports = {
         "value-list-max-empty-lines": 0,
 
         // Shorthand property (http://stylelint.io/user-guide/rules/#shorthand-property)
-        "shorthand-property-no-redundant-values": true,
+        "shorthand-property-no-redundant-values": [true, { severity: "warning" }],
 
         // Property (http://stylelint.io/user-guide/rules/#property)
         "property-case": "lower",
@@ -64,15 +64,15 @@ module.exports = {
         // Declaration (http://stylelint.io/user-guide/rules/#declaration)
         "declaration-bang-space-after": "never",
         "declaration-bang-space-before": "always",
-        "declaration-colon-space-after": "always",
-        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": ["always", { severity: "warning" }],
+        "declaration-colon-space-before": ["never", { severity: "warning" }],
 
         // Declaration block (http://stylelint.io/user-guide/rules/#declaration-block)
         "declaration-block-no-duplicate-properties": true,
         "declaration-block-no-ignored-properties": true,
         "declaration-block-no-redundant-longhand-properties": true,
         "declaration-block-no-shorthand-property-overrides": true,
-        "declaration-block-semicolon-newline-after": true,
+        "declaration-block-semicolon-newline-after": "always",
         "declaration-block-semicolon-space-after": "never",
         "declaration-block-semicolon-space-before": "never",
         "declaration-block-single-line-max-declarations": 1,
@@ -80,21 +80,20 @@ module.exports = {
 
         // Block (http://stylelint.io/user-guide/rules/#block)
         "block-closing-brace-empty-line-before": "never",
-        "block-closing-brace-newline-after": "always",
-        "block-closing-brace-newline-before": "always",
+        "block-closing-brace-newline-after": ["always", { severity: "warning" }],
+        "block-closing-brace-newline-before": ["always", { severity: "warning" }],
         "block-no-empty": true,
         "block-no-single-line": true,
-        "block-opening-brace-newline-after": "always",
-        "block-opening-brace-newline-before": "never-multi-line",
-        "block-opening-brace-space-before": "always",
+        "block-opening-brace-newline-after": ["always", { severity: "warning" }],
+        "block-opening-brace-space-before": ["always", { severity: "warning" }],
 
         // Selector (http://stylelint.io/user-guide/rules/#selector)
         "selector-attribute-brackets-space-inside": "never",
         "selector-attribute-operator-space-after": "never",
         "selector-attribute-operator-space-before": "never",
         "selector-attribute-quotes": "always",
-        "selector-combinator-space-after": "always",
-        "selector-combinator-space-before": "always",
+        "selector-combinator-space-after": ["always", { severity: "warning" }],
+        "selector-combinator-space-before": ["always", { severity: "warning" }],
         "selector-descendant-combinator-no-non-space": true,
         "selector-max-compound-selectors": 4,
         "selector-no-empty": true,
@@ -113,9 +112,9 @@ module.exports = {
         "selector-max-empty-lines": 0,
 
         // Selector list (http://stylelint.io/user-guide/rules/#selector-list)
-        "selector-list-comma-newline-after": "always",
-        "selector-list-comma-newline-before": "never-multi-line",
-        "selector-list-comma-space-before": "never",
+        "selector-list-comma-newline-after": ["always", { severity: "warning" }],
+        "selector-list-comma-newline-before": ["never-multi-line", { severity: "warning" }],
+        "selector-list-comma-space-before": ["never", { severity: "warning" }],
 
         // Root rule (http://stylelint.io/user-guide/rules/#root-rule)
         "root-no-standard-properties": true,
@@ -135,11 +134,11 @@ module.exports = {
         "media-feature-range-operator-space-before": "always",
 
         // At rule (http://stylelint.io/user-guide/rules/#at-rule)
-        "at-rule-empty-line-before": "always",
+        "at-rule-empty-line-before": ["always", { severity: "warning" }],
         "at-rule-name-case": "lower",
         "at-rule-name-space-after": "always",
         "at-rule-no-vendor-prefix": true,
-        "at-rule-semicolon-newline-after": "always",
+        "at-rule-semicolon-newline-after": ["always", { severity: "warning" }],
 
         // stylelint-disable comment (http://stylelint.io/user-guide/rules/#stylelint-disable-comment)
         "stylelint-disable-reason": "always-before",
@@ -149,7 +148,7 @@ module.exports = {
         "comment-whitespace-inside": "always",
 
         // General / sheet (http://stylelint.io/user-guide/rules/#general--sheet)
-        "indentation": 4,
+        "indentation": 4, // autofix
         "max-empty-lines": 1,
         "max-nesting-depth": 4,
         "no-browser-hacks": true,
