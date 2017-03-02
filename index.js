@@ -37,7 +37,6 @@ module.exports = {
 
         // Time (http://stylelint.io/user-guide/rules/#time)
         "time-min-milliseconds": 100,
-        "time-no-imperceptible": true,
 
         // Unit (http://stylelint.io/user-guide/rules/#unit)
         "unit-case": "lower",
