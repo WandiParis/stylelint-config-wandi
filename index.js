@@ -36,6 +36,7 @@ module.exports = {
         "length-zero-no-unit": [true, { severity: "warning" }],
 
         // Time (http://stylelint.io/user-guide/rules/#time)
+        "time-min-milliseconds": 100,
         "time-no-imperceptible": true,
 
         // Unit (http://stylelint.io/user-guide/rules/#unit)
@@ -69,7 +70,6 @@ module.exports = {
 
         // Declaration block (http://stylelint.io/user-guide/rules/#declaration-block)
         "declaration-block-no-duplicate-properties": true,
-        "declaration-block-no-ignored-properties": true,
         "declaration-block-no-redundant-longhand-properties": true,
         "declaration-block-no-shorthand-property-overrides": true,
         "declaration-block-semicolon-newline-after": "always",
@@ -82,7 +82,6 @@ module.exports = {
         "block-closing-brace-newline-after": ["always", { severity: "warning" }],
         "block-closing-brace-newline-before": ["always", { severity: "warning" }],
         "block-no-empty": true,
-        "block-no-single-line": true,
         "block-opening-brace-newline-after": ["always", { severity: "warning" }],
         "block-opening-brace-space-before": ["always", { severity: "warning" }],
 
@@ -95,7 +94,6 @@ module.exports = {
         "selector-combinator-space-before": ["always", { severity: "warning" }],
         "selector-descendant-combinator-no-non-space": true,
         "selector-max-compound-selectors": 4,
-        "selector-no-empty": true,
         "selector-no-id": true,
         "selector-no-qualifying-type": true,
         "selector-no-vendor-prefix": true,
@@ -105,7 +103,6 @@ module.exports = {
         "selector-pseudo-element-case": "lower",
         "selector-pseudo-element-colon-notation": "double",
         "selector-pseudo-element-no-unknown": true,
-        "selector-root-no-composition": true,
         "selector-type-case": "lower",
         "selector-type-no-unknown": true,
         "selector-max-empty-lines": 0,
@@ -115,19 +112,11 @@ module.exports = {
         "selector-list-comma-newline-before": ["never-multi-line", { severity: "warning" }],
         "selector-list-comma-space-before": ["never", { severity: "warning" }],
 
-        // Root rule (http://stylelint.io/user-guide/rules/#root-rule)
-        "root-no-standard-properties": true,
-
-        // Rule (http://stylelint.io/user-guide/rules/#rule)
-        "rule-nested-empty-line-before": "never",
-        "rule-non-nested-empty-line-before": "always",
-
         // Media feature (http://stylelint.io/user-guide/rules/#media-feature)
         "media-feature-colon-space-after": "always",
         "media-feature-colon-space-before": "never",
         "media-feature-name-case": "lower",
         "media-feature-name-no-unknown": true,
-        "media-feature-no-missing-punctuation": true,
         "media-feature-parentheses-space-inside": "never",
         "media-feature-range-operator-space-after": "always",
         "media-feature-range-operator-space-before": "always",
@@ -138,9 +127,6 @@ module.exports = {
         "at-rule-name-space-after": "always",
         "at-rule-no-vendor-prefix": true,
         "at-rule-semicolon-newline-after": ["always", { severity: "warning" }],
-
-        // stylelint-disable comment (http://stylelint.io/user-guide/rules/#stylelint-disable-comment)
-        "stylelint-disable-reason": "always-before",
 
         // Comment (http://stylelint.io/user-guide/rules/#comment)
         "comment-no-empty": true,
