@@ -94,7 +94,7 @@ module.exports = {
         "selector-descendant-combinator-no-non-space": true,
         "selector-max-compound-selectors": 4,
         "selector-no-id": true,
-        "selector-no-qualifying-type": true,
+        "selector-no-qualifying-type": [true, { ignore: ["attribute"] }],
         "selector-no-vendor-prefix": true,
         "selector-pseudo-class-case": "lower",
         "selector-pseudo-class-no-unknown": true,

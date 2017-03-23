@@ -107,6 +107,10 @@ const validCSS = `
     display: block;
 }
 
+input[type="text"] {
+    color: red;
+}
+
 .foo18 + .foo19 {
     display: block;
 }
@@ -288,7 +292,7 @@ const invalidCSS = `
 .foo16{
     display: block;} .foo17
 {
-    
+
 }
 
 .foo18 { display: block; }
@@ -297,6 +301,10 @@ const invalidCSS = `
 
 .foo19[ type = button ] {
     display: block;
+}
+
+input[type="text"] {
+    color: red;
 }
 
 .foo20+.foo21+.foo22+.foo23+.foo24 {
@@ -338,7 +346,7 @@ BUTTON {
 /* Rule */
 
 .foo31 {
-    
+
     &:hover {
         display: block;
     }
@@ -349,11 +357,11 @@ BUTTON {
 /* Media feature */
 
 @media ( max-width :600px ) {
-    
+
     .foo32 {
         display: block;
     }
-    
+
 }
 
 @media ( max-width 600px ) {
@@ -365,18 +373,18 @@ BUTTON {
 
 describe("flags no warning and no error with valid CSS", () => {
     let result;
-    
+
     beforeEach(() => {
         result = stylelint.lint({
             code: validCSS,
             config,
         });
     });
-    
+
     it("did not error", () => {
         return result.then(data => expect(data.errored).toBeFalsy());
     });
-    
+
     it("flags no warning", () => {
         return result.then(data => expect(data.results[0].warnings.length).toBe(0));
     });
@@ -384,18 +392,18 @@ describe("flags no warning and no error with valid CSS", () => {
 
 describe("flags warnings and errors with invalid CSS", () => {
     let result;
-    
+
     beforeEach(() => {
         result = stylelint.lint({
             code: invalidCSS,
             config,
         });
     });
-    
+
     it("did error", () => {
         return result.then(data => expect(data.errored).toBeTruthy());
     });
-    
+
     it("flags warnings", () => {
         return result.then(data => expect(data.results[0].warnings.length).toBeGreaterThan(0));
     });
