@@ -1,6 +1,6 @@
 {
   "name": "@wandiparis/stylelint-config-wandi",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Wandi StyleLint configuration",
   "main": "index.js",
   "scripts": {
