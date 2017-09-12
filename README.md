@@ -19,6 +19,6 @@ to see other supported formats), add the following `extends` property :
 
 ```js
 module.exports = {
-    extends: "stylelint-config-wandi"
+    extends: "@wandiparis/stylelint-config-wandi"
 }
 ```
