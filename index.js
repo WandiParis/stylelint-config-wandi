@@ -93,7 +93,7 @@ module.exports = {
         "selector-combinator-space-before": ["always", { severity: "warning" }],
         "selector-descendant-combinator-no-non-space": true,
         "selector-max-compound-selectors": 4,
-        "selector-no-id": true,
+        "selector-max-id": 0,
         "selector-no-qualifying-type": [true, { ignore: ["attribute"] }],
         "selector-no-vendor-prefix": true,
         "selector-pseudo-class-case": "lower",
