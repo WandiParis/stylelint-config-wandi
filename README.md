@@ -7,7 +7,7 @@ Wandi StyleLint configurations
 To install the configuration, you just have to run the following command :
 
 ```
-npm install --save-dev stylelint-config-wandi
+npm install --save-dev @wandiparis/stylelint-config-wandi
 ```
 
 ## How to use
