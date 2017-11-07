@@ -1,13 +1,17 @@
 # stylelint-config-wandi
 
-Wandi StyleLint configurations
+Wandi StyleLint configuration
 
 ## Install
 
-To install the configuration, you just have to run the following command :
+This package has some peer dependencies. The recommended way to install it and
+its peer dependencies in a single command is to install
+[`install-peerdeps`](https://github.com/nathanhleung/install-peerdeps) and run
+it :
 
 ```
-npm install --save-dev @wandiparis/stylelint-config-wandi
+npm install -g install-peerdeps
+install-peerdeps --dev @wandiparis/stylelint-config-wandi
 ```
 
 ## How to use
@@ -22,3 +26,10 @@ module.exports = {
     extends: "@wandiparis/stylelint-config-wandi"
 }
 ```
+
+## Rules
+
+The config extends some other configurations :
+
+* [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended)
+* Some rules from [`stylelint-css` plugin](https://github.com/kristerkari/stylelint-scss). See `index.js` for the detail.
