@@ -32,4 +32,4 @@ module.exports = {
 The config extends some other configurations :
 
 * [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended)
-* Some rules from [`stylelint-css` plugin](https://github.com/kristerkari/stylelint-scss). See `index.js` for the detail.
+* Some rules from [`stylelint-scss` plugin](https://github.com/kristerkari/stylelint-scss). See `index.js` for the detail.
