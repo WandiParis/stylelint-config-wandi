@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/WandiParis/stylelint-config-wandi#readme",
   "peerDependencies": {
-    "stylelint": "^8.2.0"
+    "stylelint": "^8.3.0"
   },
   "dependencies": {
-    "stylelint-config-recommended": "^1.0.0",
+    "stylelint-config-recommended": "^2.0.0",
     "stylelint-scss": "^2.1.0"
   }
 }
