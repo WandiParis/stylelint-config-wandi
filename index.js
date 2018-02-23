@@ -8,7 +8,7 @@ module.exports = {
         // stylelint-scss one
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
-        "dollar-variable-no-missing-interpolation": true,
+        // "dollar-variable-no-missing-interpolation": true,
         "selector-no-redundant-nesting-selector": true,
     },
 };
